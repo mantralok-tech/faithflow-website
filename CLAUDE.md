@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Faith Flow is a spiritual wellbeing platform website. The repository contains a multi-page static HTML site showcasing the Faith Flow ecosystem, including platforms for Spiritual Growth, Guidance, and Engagement, along with company information and contact pages.
+Mantralok is a spiritual wellbeing platform website. The repository contains a multi-page static HTML site showcasing the Mantralok ecosystem, including platforms for Spiritual Growth, Guidance, and Engagement, along with company information and contact pages.
 
 ## Architecture
 
@@ -108,6 +108,6 @@ Each page follows a consistent structure:
 
 **Content Guidelines**
 - Homepage (`index.html`): Overview of all platforms, site structure/sitemap, app download CTA
-- About (`about.html`): Mission statement, values (3 cards), "Why Faith Flow?" section
+- About (`about.html`): Mission statement, values (3 cards), "Why Mantralok?" section
 - Contact (`contact.html`): Contact form with name/email/subject/message fields, contact info cards
 - Platform pages: Hero with platform icon, detailed features (6 cards), benefits, CTA, links to other platforms
