@@ -9,218 +9,183 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
 <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#E6AB45",
-              secondary: "#FAF5EA",
-              "background-light": "#F8F8F8",
-              "background-dark": "#1A1A1A",
-              "text-dark": "#1A1A1A",
-              "text-light": "#FAFAFA",
-              "surface-dark": "#262626",
-            },
-            fontFamily: {
-              display: ['"Poltawski Nowy"', "serif"],
-              sans: ['"Poppins"', "sans-serif"],
-            },
-            borderRadius: {
-              DEFAULT: "12px",
-              xl: "24px",
-            },
-          },
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          primary: "#E6AB45",
+          secondary: "#FAF5EA",
+          "background-light": "#F8F8F8",
+          "background-dark": "#1A1A1A",
+          "text-dark": "#1A1A1A",
+          "text-light": "#FAFAFA",
+          "surface-dark": "#262626",
         },
-      };
-    </script>
+        fontFamily: {
+          display: ['"Poltawski Nowy"', "serif"],
+          sans: ['"Poppins"', "sans-serif"],
+        },
+        borderRadius: {
+          DEFAULT: "12px",
+          xl: "24px",
+        },
+      },
+    },
+  };
+</script>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-text-dark dark:text-text-light font-sans antialiased selection:bg-primary selection:text-white transition-colors duration-300">
 <nav class="sticky top-0 z-50 bg-white/90 dark:bg-surface-dark/90 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between h-20 items-center">
-<div class="flex-shrink-0 flex items-center gap-3">
-<span class="material-icons-round text-4xl text-primary animate-spin-slow" style="animation-duration: 10s;">all_inclusive</span>
-<div class="flex flex-col">
-<span class="font-display font-bold text-2xl tracking-wide text-gray-900 dark:text-white leading-none">MANTRALOK</span>
-<span class="text-xs text-gray-500 dark:text-gray-400 font-medium tracking-widest uppercase mt-1">Clarity for every soul</span>
-</div>
-</div>
-<div class="hidden md:flex space-x-8 items-center">
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors" href="index.html">Home</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors" href="about.html">About</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors" href="index.html#platforms">Platforms</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors" href="contact.html">Contact</a>
-<button class="bg-primary hover:bg-[#d69b35] text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-lg shadow-primary/30">Get Started</button>
-<button class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
-<span class="material-icons-round dark:hidden">dark_mode</span>
-<span class="material-icons-round hidden dark:block">light_mode</span>
-</button>
-</div>
-<div class="md:hidden flex items-center">
-<button class="p-2 mr-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
-<span class="material-icons-round dark:hidden">dark_mode</span>
-<span class="material-icons-round hidden dark:block">light_mode</span>
-</button>
-<button class="text-gray-600 dark:text-gray-300 hover:text-primary">
-<span class="material-icons-round text-3xl">menu</span>
-</button>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-20 items-center">
+      <div class="flex-shrink-0 flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-3">
+          <span class="material-icons-round text-4xl text-primary animate-spin-slow" style="animation-duration: 10s;">all_inclusive</span>
+          <div class="flex flex-col">
+            <span class="font-display font-bold text-2xl tracking-wide text-gray-900 dark:text-white leading-none">MANTRALOK</span>
+            <span class="text-xs text-gray-500 dark:text-gray-400 font-medium tracking-widest uppercase mt-1">Clarity for every soul</span>
+          </div>
+        </a>
+      </div>
+      <div class="hidden md:flex space-x-8 items-center">
+        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors" href="index.html">Home</a>
+        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors" href="about.html">About</a>
+        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors" href="index.html#platforms">Platforms</a>
+        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary font-medium transition-colors" href="contact.html">Contact</a>
+        <button class="bg-primary hover:bg-[#d69b35] text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-lg shadow-primary/30">Get Started</button>
+        <button class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+          <span class="material-icons-round dark:hidden">dark_mode</span>
+          <span class="material-icons-round hidden dark:block">light_mode</span>
+        </button>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button class="p-2 mr-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+          <span class="material-icons-round dark:hidden">dark_mode</span>
+          <span class="material-icons-round hidden dark:block">light_mode</span>
+        </button>
+        <button class="text-gray-600 dark:text-gray-300 hover:text-primary">
+          <span class="material-icons-round text-3xl">menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </nav>
-<header class="relative bg-secondary dark:bg-surface-dark pt-20 pb-16 overflow-hidden">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-<h1 class="font-display text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-                Privacy Policy
-            </h1>
-<p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Last updated: August 31, 2026</p>
-<p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                This Privacy Policy describes how Mantralok Technologies LLP and its affiliates collect, use, share, protect and otherwise process your personal data when you use our platform and services.
-            </p>
-</div>
-</header>
-<section class="py-12 bg-white dark:bg-background-dark">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="bg-secondary dark:bg-surface-dark p-6 rounded-xl">
-<h3 class="font-display text-xl font-semibold text-gray-900 dark:text-white mb-3">Who we are</h3>
-<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                        Mantralok Technologies LLP and affiliates ("we", "our", "us") provide platform services and act as data controllers for personal data processed through our services.
-                    </p>
-</div>
-<div class="bg-secondary dark:bg-surface-dark p-6 rounded-xl">
-<h3 class="font-display text-xl font-semibold text-gray-900 dark:text-white mb-3">Contact</h3>
-<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                        Email: <a href="mailto:mantraloktech@gmail.com" class="text-primary hover:underline">mantraloktech@gmail.com</a><br/>
-                        Grievance Officer: Raj Singh, Co-Founder, Mantralok Technologies LLP
-                    </p>
-</div>
-<div class="bg-secondary dark:bg-surface-dark p-6 rounded-xl">
-<h3 class="font-display text-xl font-semibold text-gray-900 dark:text-white mb-3">Scope</h3>
-<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                        This policy applies whenever you use our platform, services or otherwise interact with us.
-                    </p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-12 bg-background-light dark:bg-[#121212]">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="font-display text-3xl font-bold text-gray-900 dark:text-white mb-6">Collection of personal data</h2>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                We collect personal data when you use our platform, services, or otherwise interact with us during the course of our relationship.
-            </p>
-</div>
-</section>
-<section class="py-12 bg-white dark:bg-background-dark">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="font-display text-3xl font-bold text-gray-900 dark:text-white mb-6">How we use your data</h2>
-<ul class="space-y-3 text-gray-600 dark:text-gray-400">
-<li class="flex items-start gap-3"><span class="material-icons-round text-primary text-xl flex-shrink-0 mt-0.5">check_circle</span><span>Provide the services you request.</span></li>
-<li class="flex items-start gap-3"><span class="material-icons-round text-primary text-xl flex-shrink-0 mt-0.5">check_circle</span><span>Improve customer experience.</span></li>
-<li class="flex items-start gap-3"><span class="material-icons-round text-primary text-xl flex-shrink-0 mt-0.5">check_circle</span><span>Resolve disputes and troubleshoot problems.</span></li>
-<li class="flex items-start gap-3"><span class="material-icons-round text-primary text-xl flex-shrink-0 mt-0.5">check_circle</span><span>Inform you about offers, products, services and updates (with opt-out where applicable).</span></li>
-<li class="flex items-start gap-3"><span class="material-icons-round text-primary text-xl flex-shrink-0 mt-0.5">check_circle</span><span>Detect and protect against error, fraud and other criminal activity.</span></li>
-<li class="flex items-start gap-3"><span class="material-icons-round text-primary text-xl flex-shrink-0 mt-0.5">check_circle</span><span>Enforce our terms and comply with legal obligations.</span></li>
-</ul>
-</div>
-</section>
-<section class="py-12 bg-background-light dark:bg-[#121212]">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="font-display text-3xl font-bold text-gray-900 dark:text-white mb-6">Sharing of personal data</h2>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                We may share personal data within our group entities, affiliates, and corporate entities to provide services and products. These entities and affiliates may not market to you unless you explicitly opt-in.
-            </p>
-</div>
-</section>
-<section class="py-12 bg-white dark:bg-background-dark">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="font-display text-3xl font-bold text-gray-900 dark:text-white mb-6">Security precautions</h2>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                We adopt reasonable security practices and procedures to protect personal data from unauthorized access, disclosure, loss, or misuse.
-            </p>
-</div>
-</section>
-<section class="py-12 bg-background-light dark:bg-[#121212]">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="font-display text-3xl font-bold text-gray-900 dark:text-white mb-6">Data deletion and retention</h2>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                You may request account deletion through profile/settings options on the platform. Deletion may result in loss of account-related information.
-            </p>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                We retain your data only as long as required for legitimate business or legal purposes.
-            </p>
-</div>
-</section>
-<section class="py-12 bg-white dark:bg-background-dark">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="font-display text-3xl font-bold text-gray-900 dark:text-white mb-6">Your rights</h2>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                You may access, rectify, and update your personal data directly through functionalities provided on the platform.
-            </p>
-</div>
-</section>
-<section class="py-12 bg-background-light dark:bg-[#121212]">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="font-display text-3xl font-bold text-gray-900 dark:text-white mb-6">Consent</h2>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                By visiting our platform or providing your information, you consent to the collection, use, storage, disclosure and processing of your information in accordance with this policy.
-            </p>
-</div>
-</section>
-<section class="py-12 bg-white dark:bg-background-dark">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="font-display text-3xl font-bold text-gray-900 dark:text-white mb-6">Changes to this policy</h2>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Please review this page periodically. We may update this policy to reflect changes to our information practices and may notify you as required by applicable law.
-            </p>
-</div>
-</section>
-<footer class="bg-secondary dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-<div class="col-span-1 md:col-span-1">
-<div class="flex items-center gap-2 mb-6">
-<span class="material-icons-round text-primary text-2xl">all_inclusive</span>
-<span class="font-display font-bold text-xl text-gray-900 dark:text-white">MANTRALOK</span>
-</div>
-<p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Connecting devotees and service providers within a spiritual ecosystem. Your spiritual journey starts here.</p>
-</div>
-<div>
-<h5 class="font-bold text-gray-900 dark:text-white mb-4">Quick Links</h5>
-<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-<li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
-<li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
-<li><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></li>
-<li><a class="hover:text-primary transition-colors" href="index.html#platforms">Platforms</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-bold text-gray-900 dark:text-white mb-4">Support</h5>
-<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-<li><a class="hover:text-primary transition-colors" href="terms.html">Terms of Service</a></li>
-<li><a class="hover:text-primary transition-colors" href="privacy.html">Privacy Policy</a></li>
-<li><a class="hover:text-primary transition-colors" href="refund.html">Refund Policy</a></li>
-<li><a class="hover:text-primary transition-colors" href="return.html">Return Policy</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-bold text-gray-900 dark:text-white mb-4">Newsletter</h5>
-<p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Get the latest spiritual insights.</p>
-<form class="flex flex-col gap-2">
-<input class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Email address" type="email"/>
-<button class="bg-primary hover:bg-[#d69b35] text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors" type="submit">Subscribe</button>
-</form>
-</div>
-</div>
-<div class="border-t border-gray-200 dark:border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-sm text-gray-500 dark:text-gray-400">© 2026 Mantralok Technologies LLP. All rights reserved.</p>
-<div class="flex items-center gap-6">
-<span class="text-xs text-gray-400">English (US)</span>
-</div>
-</div>
-</div>
-</footer>
 
+<header class="relative bg-secondary dark:bg-surface-dark pt-20 pb-16 overflow-hidden">
+  <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/10 dark:bg-primary/5 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 bg-primary/10 dark:bg-primary/5 rounded-full blur-3xl"></div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <h1 class="font-display text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">Privacy Policy</h1>
+    <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Last updated: September 1, 2026</p>
+    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">This Privacy Policy describes how Mantralok Technologies LLP and its affiliates collect, use, share, protect or otherwise process your information and personal data through the Platform.</p>
+  </div>
+</header>
+
+<section class="py-12 bg-white dark:bg-background-dark">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="space-y-8 text-gray-600 dark:text-gray-400">
+      <div>
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-3">Introduction</h2>
+        <p class="leading-relaxed">This Privacy Policy describes how Mantralok Technologies LLP and its affiliates (collectively “Mantralok Technologies LLP, we, our, us”) collect, use, share, protect or otherwise process your information/ personal data through our website https://mantraloktech.com/ (hereinafter referred to as Platform). Please note that you may be able to browse certain sections of the Platform without registering with us. We do not offer any product/service under this Platform outside India and your personal data will primarily be stored and processed in India. By visiting this Platform, providing your information or availing any product/service offered on the Platform, you expressly agree to be bound by the terms and conditions of this Privacy Policy, the Terms of Use and the applicable service/product terms and conditions, and agree to be governed by the laws of India including but not limited to the laws applicable to data protection and privacy. If you do not agree please do not use or access our Platform.</p>
+      </div>
+      <div>
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-3">Collection</h2>
+        <p class="leading-relaxed">We collect your personal data when you use our Platform, services or otherwise interact with us during the course of our relationship and related information provided from time to time. Some of the information that we may collect includes but is not limited to personal data / information provided to us during sign-up/registering or using our Platform such as name, date of birth, address, telephone/mobile number, email ID and/or any such information shared as proof of identity or address. Some of the sensitive personal data may be collected with your consent, such as your bank account or credit or debit card or other payment instrument information or biometric information such as your facial features or physiological information (in order to enable use of certain features when opted for, available on the Platform) etc, all of the above being in accordance with applicable law(s). You always have the option to not provide information, by choosing not to use a particular service or feature on the Platform. We may track your behaviour, preferences, and other information that you choose to provide on our Platform. This information is compiled and analysed on an aggregated basis. We will also collect your information related to your transactions on Platform and such third-party business partner platforms. When such a third-party business partner collects your personal data directly from you, you will be governed by their privacy policies. We shall not be responsible for the third-party business partner’s privacy practices or the content of their privacy policies, and we request you to read their privacy policies prior to disclosing any information. If you receive an email, a call from a person/association claiming to be Mantralok Technologies LLP seeking any personal data like debit/credit card PIN, net-banking or mobile banking password, we request you to never provide such information. If you have already revealed such information, report it immediately to an appropriate law enforcement agency.</p>
+      </div>
+      <div>
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-3">Usage</h2>
+        <p class="leading-relaxed">We use personal data to provide the services you request. To the extent we use your personal data to market to you, we will provide you the ability to opt-out of such uses. We use your personal data to assist sellers and business partners in handling and fulfilling orders; enhancing customer experience; to resolve disputes; troubleshoot problems; inform you about online and offline offers, products, services, and updates; customise your experience; detect and protect us against error, fraud and other criminal activity; enforce our terms and conditions; conduct marketing research, analysis and surveys; and as otherwise described to you at the time of collection of information. You understand that your access to these products/services may be affected in the event permission is not provided to us.</p>
+      </div>
+      <div>
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-3">Sharing</h2>
+        <p class="leading-relaxed">We may share your personal data internally within our group entities, our other corporate entities, and affiliates to provide you access to the services and products offered by them. These entities and affiliates may market to you as a result of such sharing unless you explicitly opt-out. We may disclose personal data to third parties such as sellers, business partners, third party service providers including logistics partners, prepaid payment instrument issuers, third-party reward programs and other payment opted by you. These disclosure may be required for us to provide you access to our services and products offered to you, to comply with our legal obligations, to enforce our user agreement, to facilitate our marketing and advertising activities, to prevent, detect, mitigate, and investigate fraudulent or illegal activities related to our services. We may disclose personal and sensitive personal data to government agencies or other authorised law enforcement agencies if required to do so by law or in the good faith belief that such disclosure is reasonably necessary to respond to subpoenas, court orders, or other legal process. We may disclose personal data to law enforcement offices, third party rights owners, or others in the good faith belief that such disclosure is reasonably necessary to: enforce our Terms of Use or Privacy Policy; respond to claims that an advertisement, posting or other content violates the rights of a third party; or protect the rights, property or personal safety of our users or the general public.</p>
+      </div>
+      <div>
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-3">Security Precautions</h2>
+        <p class="leading-relaxed">To protect your personal data from unauthorised access or disclosure, loss or misuse we adopt reasonable security practices and procedures. Once your information is in our possession or whenever you access your account information, we adhere to our security guidelines to protect it against unauthorised access and offer the use of a secure server. However, the transmission of information is not completely secure for reasons beyond our control. By using the Platform, the users accept the security implications of data transmission over the internet and the World Wide Web which cannot always be guaranteed as completely secure, and therefore, there would always remain certain inherent risks regarding use of the Platform. Users are responsible for ensuring the protection of login and password records for their account.</p>
+      </div>
+      <div>
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-3">Data Deletion and Retention</h2>
+        <p class="leading-relaxed">You have an option to delete your account by visiting your profile and settings on our Platform, this action would result in you losing all information related to your account. You may also write to us at the contact information provided below to assist you with these requests. We may in event of any pending grievance, claims, pending shipments or any other services we may refuse or delay deletion of the account. Once the account is deleted, you will lose access to the account. We retain your personal data information for a period no longer than is required for the purpose for which it was collected or as required under any applicable law. However, we may retain data related to you if we believe it may be necessary to prevent fraud or future abuse or for other legitimate purposes. We may continue to retain your data in anonymised form for analytical and research purposes.</p>
+      </div>
+      <div>
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-3">Your Rights</h2>
+        <p class="leading-relaxed">You may access, rectify, and update your personal data directly through the functionalities provided on the Platform.</p>
+      </div>
+      <div>
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-3">Consent</h2>
+        <p class="leading-relaxed">By visiting our Platform or by providing your information, you consent to the collection, use, storage, disclosure and otherwise processing of your information on the Platform in accordance with this Privacy Policy. If you disclose to us any personal data relating to other people, you represent that you have the authority to do so and permit us to use the information in accordance with this Privacy Policy. You, while providing your personal data over the Platform or any partner platforms or establishments, consent to us (including our other corporate entities, affiliates, lending partners, technology partners, marketing channels, business partners and other third parties) to contact you through SMS, instant messaging apps, call and/or e-mail for the purposes specified in this Privacy Policy. You have an option to withdraw your consent that you have already provided by writing to the Grievance Officer at the contact information provided below. Please mention “Withdrawal of consent for processing personal data” in your subject line of your communication. We may verify such requests before acting on our request. However, please note that your withdrawal of consent will not be retrospective and will be in accordance with the Terms of Use, this Privacy Policy, and applicable laws. In the event you withdraw consent given to us under this Privacy Policy, we reserve the right to restrict or deny the provision of our services for which we consider such information to be necessary.</p>
+      </div>
+      <div>
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-3">Changes to this Privacy Policy</h2>
+        <p class="leading-relaxed">Please check our Privacy Policy periodically for changes. We may update this Privacy Policy to reflect changes to our information practices. We may alert / notify you about the significant changes to the Privacy Policy, in the manner as may be required under applicable laws.</p>
+      </div>
+      <div class="bg-secondary dark:bg-surface-dark rounded-xl p-6">
+        <h2 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+          <span class="material-icons-round text-primary">support_agent</span> Grievance Officer
+        </h2>
+        <ul class="space-y-2">
+          <li><strong class="text-gray-900 dark:text-white">Name:</strong> R Singh</li>
+          <li><strong class="text-gray-900 dark:text-white">Designation:</strong> Authorised Director</li>
+          <li><strong class="text-gray-900 dark:text-white">Company:</strong> Mantralok Technologies LLP</li>
+          <li><strong class="text-gray-900 dark:text-white">Contact us:</strong> <a class="text-primary hover:underline" href="mailto:mantraloktech@gmail.com">mantraloktech@gmail.com</a></li>
+          <li><strong class="text-gray-900 dark:text-white">Time:</strong> Monday – Friday (9:00 – 18:00)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-12 bg-background-light dark:bg-[#121212]">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="font-display text-3xl font-bold text-gray-900 dark:text-white mb-4">Need Help?</h2>
+    <p class="text-gray-600 dark:text-gray-400">To raise a grievance or withdraw consent, write to our Grievance Officer at <a class="text-primary hover:underline" href="mailto:mantraloktech@gmail.com">mantraloktech@gmail.com</a>, Monday – Friday (9:00 – 18:00).</p>
+  </div>
+</section>
+
+<footer class="bg-secondary dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div class="col-span-1 md:col-span-1">
+        <div class="flex items-center gap-2 mb-6">
+          <span class="material-icons-round text-primary text-2xl">all_inclusive</span>
+          <span class="font-display font-bold text-xl text-gray-900 dark:text-white">MANTRALOK</span>
+        </div>
+        <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">Connecting devotees and service providers within a spiritual ecosystem. Your spiritual journey starts here.</p>
+        <p class="text-gray-500 dark:text-gray-400 text-sm">Email: <a href="mailto:mantraloktech@gmail.com" class="text-primary hover:underline">mantraloktech@gmail.com</a></p>
+      </div>
+      <div>
+        <h5 class="font-bold text-gray-900 dark:text-white mb-4">Quick Links</h5>
+        <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+          <li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+          <li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+          <li><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></li>
+          <li><a class="hover:text-primary transition-colors" href="index.html#platforms">Platforms</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold text-gray-900 dark:text-white mb-4">Support</h5>
+        <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+          <li><a class="hover:text-primary transition-colors" href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a class="hover:text-primary transition-colors" href="privacy.html">Privacy Policy</a></li>
+          <li><a class="hover:text-primary transition-colors" href="refund.html">Refund &amp; Cancellation Policy</a></li>
+          <li><a class="hover:text-primary transition-colors" href="return.html">Return Policy</a></li>
+          <li><a class="hover:text-primary transition-colors" href="shipping.html">Shipping Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold text-gray-900 dark:text-white mb-4">Newsletter</h5>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Get the latest spiritual insights.</p>
+        <form class="flex flex-col gap-2">
+          <input class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Email address" type="email"/>
+          <button class="bg-primary hover:bg-[#d69b35] text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="border-t border-gray-200 dark:border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-sm text-gray-500 dark:text-gray-400">© 2026 Mantralok Technologies LLP. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 </body></html>
