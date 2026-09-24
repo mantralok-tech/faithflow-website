@@ -30,6 +30,7 @@ The site consists of the following pages:
 - `index.html` - Homepage with platform overview and site ecosystem
 - `about.html` - About Us page with mission, values, and company information
 - `contact.html` - Contact page with form and contact information
+- `partners.html` - Partners & Institutions page; routes both audiences to the partner portal at https://partner.mantraloktech.com
 
 **Platform Detail Pages:**
 1. `spiritual-growth.html` - Personal evolution tools (meditation, devotionals, prayer journal)
@@ -40,8 +41,23 @@ The site consists of the following pages:
 - Home → `index.html`
 - About → `about.html`
 - Platforms → `index.html#platforms` (anchor link to platforms section on homepage)
+- Partners → `partners.html`
 - Contact → `contact.html`
 - Platform cards on homepage link to their respective detail pages
+- The nav's "Get Started" button is `hidden lg:block`: with five links the row
+  overflows at the `md` breakpoint where the desktop nav appears
+
+**Forms**
+Both the contact form and the footer newsletter signup post to a Google Apps
+Script endpoint (source and setup in `apps-script/`), which logs submissions to
+a Google Sheet and emails `info@mantraloktech.com`. The site is on GitHub Pages
+and cannot run server code, so there is no other backend.
+
+- `forms.js` is shared by every page and holds the endpoint URL in `ENDPOINT`
+- Form fields must carry `name` attributes — `forms.js` collects by name
+- Each form needs `data-form="contact|newsletter"`, a `[data-form-status]`
+  element for the result message, and a hidden `name="company"` honeypot
+- With `ENDPOINT` unset both forms say so rather than faking success
 
 ## Development Workflow
 

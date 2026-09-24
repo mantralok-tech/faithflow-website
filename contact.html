@@ -100,18 +100,18 @@
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 <div>
 <h2 id="contact-form" class="font-display text-3xl font-bold text-gray-900 dark:text-white mb-6">Send Us a Message</h2>
-<form class="space-y-6">
+<form class="space-y-6" data-form="contact">
 <div>
 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="name">Full Name</label>
-<input class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-surface-dark text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" id="name" placeholder="John Doe" required="" type="text"/>
+<input class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-surface-dark text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" id="name" name="name" placeholder="John Doe" required="" type="text"/>
 </div>
 <div>
 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="email">Email Address</label>
-<input class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-surface-dark text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" id="email" placeholder="you@example.com" required="" type="email"/>
+<input class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-surface-dark text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
 </div>
 <div>
 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="subject">Subject</label>
-<select class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-surface-dark text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" id="subject" required="">
+<select class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-surface-dark text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors" id="subject" name="subject" required="">
 <option value="">Select a subject</option>
 <option value="general">General Inquiry</option>
 <option value="support">Technical Support</option>
@@ -122,11 +122,16 @@
 </div>
 <div>
 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="message">Message</label>
-<textarea class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-surface-dark text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors resize-none" id="message" placeholder="Tell us how we can help you..." required="" rows="6"></textarea>
+<textarea class="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-surface-dark text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors resize-none" id="message" name="message" placeholder="Tell us how we can help you..." required="" rows="6"></textarea>
+</div>
+<div class="hidden" aria-hidden="true">
+<label for="company">Company</label>
+<input autocomplete="off" id="company" name="company" tabindex="-1" type="text"/>
 </div>
 <button class="w-full bg-primary hover:bg-[#d69b35] text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-lg shadow-primary/30" type="submit">
                                 Send Message
                             </button>
+<p class="text-sm hidden" data-form-status="" role="status" aria-live="polite"></p>
 </form>
 </div>
 <div>
@@ -267,9 +272,14 @@
 <div>
 <h5 class="font-bold text-gray-900 dark:text-white mb-4">Newsletter</h5>
 <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Get the latest spiritual insights.</p>
-<form class="flex flex-col gap-2">
-<input class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" placeholder="Enter your email" type="email"/>
+<form class="flex flex-col gap-2" data-form="newsletter">
+<input class="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm" name="email" required="" placeholder="Enter your email" type="email"/>
+<div class="hidden" aria-hidden="true">
+<label for="nl-company">Company</label>
+<input autocomplete="off" id="nl-company" name="company" tabindex="-1" type="text"/>
+</div>
 <button class="bg-primary hover:bg-[#d69b35] text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors" type="submit">Subscribe</button>
+<p class="text-sm hidden" data-form-status="" role="status" aria-live="polite"></p>
 </form>
 </div>
 </div>
@@ -282,4 +292,5 @@
 </div>
 </footer>
 
+<script src="forms.js"></script>
 </body></html>
