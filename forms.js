@@ -12,7 +12,7 @@
   'use strict';
 
   // Paste the /exec URL from your Apps Script deployment here.
-  var ENDPOINT = 'PASTE_YOUR_APPS_SCRIPT_EXEC_URL_HERE';
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbyLR0EYXBMRO7ahMiVBHwt8p7JZJ-BCC8WTy3-USORY6aC9QwY2JCC9S8jdDJHLydCHog/exec';
 
   var FALLBACK_EMAIL = 'info@mantraloktech.com';
   var CONFIGURED = ENDPOINT.indexOf('https://script.google.com/') === 0;
