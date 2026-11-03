@@ -34,7 +34,7 @@ The site consists of the following pages:
 
 **Platform Detail Pages:**
 1. `spiritual-growth.html` - Personal evolution tools (meditation, devotionals, prayer journal)
-2. `guidance.html` - Learning experiences (mentors, astrology, workshops, courses)
+2. `guidance.html` - Learning experiences (mentors, astrology and vastu advisory, workshops, courses)
 3. `engagement.html` - Marketplace for services, content, and community connections
 
 **Navigation Structure:**
